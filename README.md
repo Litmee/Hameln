@@ -5,5 +5,5 @@ Golang
 ```
 ### Language version
 ```
-1.18
+1.19
 ```
