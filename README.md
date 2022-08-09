@@ -1,7 +1,7 @@
 # Hameln
 ### Development Language
 ```
-GoLang
+Golang
 ```
 ### Language version
 ```
