@@ -3,7 +3,7 @@
 ```
 Golang
 ```
-### Language version
+### SDK Version
 ```
 1.19
 ```
