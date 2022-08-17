@@ -8,8 +8,9 @@ import (
 type IsName string
 
 type User struct {
-	Id   int32
-	Name IsName
+	Id      int32
+	Name    IsName
+	Address string
 }
 
 func (u *User) Apply() string {
