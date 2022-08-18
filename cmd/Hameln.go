@@ -12,6 +12,7 @@ type User struct {
 	Name    IsName
 	Address string
 	Sex     int8
+	Home    string
 }
 
 func (u *User) Apply() string {
