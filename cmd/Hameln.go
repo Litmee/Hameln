@@ -17,6 +17,7 @@ type User struct {
 }
 
 func (u *User) Apply() string {
+	fmt.Println("----")
 	return string(u.Name)
 }
 
