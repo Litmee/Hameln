@@ -3,26 +3,21 @@ package main
 import (
 	"Hameln/pkg/cache"
 	"fmt"
+	"unsafe"
 )
 
-type IsName string
-
 type User struct {
-	Id      int32
-	Name    IsName
-	Address string
-	Sex     int8
-	Home    string
-	Money   int64
-}
-
-func (u *User) Apply() string {
-	fmt.Println("----")
-	return string(u.Name)
+	//Num  int8
+	//Id   int32
+	//Age  int64
+	Name string
+	Id   int32
 }
 
 func main() {
-	user := User{Id: 1, Name: "Tom"}
-	fmt.Println(user.Apply())
+	align := unsafe.Alignof(User{})
+	fmt.Printf("最大内存对齐边界: %v \n", align)
+	var user User
+	fmt.Printf("内存大小: %v \n", unsafe.Sizeof(user))
 	cache.DoRedis()
 }
