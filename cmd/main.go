@@ -20,9 +20,9 @@ func main() {
 	var user User
 	fmt.Printf("内存大小: %v \n", unsafe.Sizeof(user))
 
-	fmt.Println("-------------------------------")
+	fmt.Println("--------------------------------")
 
-	user.Id = 100
+	user.Id = 120
 
 	var btRoot = new(internal.BinaryTree)
 	var btLeft = new(internal.BinaryTree)
