@@ -22,7 +22,7 @@ func main() {
 
 	fmt.Println("--------------------------------")
 
-	user.Id = 120
+	user.Id = 100
 
 	var btRoot = new(internal.BinaryTree)
 	var btLeft = new(internal.BinaryTree)
