@@ -29,4 +29,13 @@ func main() {
 
 	value := (btRoot.GetLeft().GetValue()).(User)
 	fmt.Println(value.Id)
+
+	fmt.Println(user.Id)
+	fmt.Println("-----------------------------------")
+	updateId(&user)
+	fmt.Println(user.Id)
+}
+
+func updateId(user *User) {
+	user.Id = 200
 }
