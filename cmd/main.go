@@ -11,6 +11,7 @@ type User struct {
 	Name    string
 	Age     int8
 	Address string
+	Sex     int8
 }
 
 func main() {
