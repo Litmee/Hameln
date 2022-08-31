@@ -7,11 +7,8 @@ import (
 )
 
 type User struct {
-	Id      int32
-	Name    string
-	Age     int8
-	Address string
-	Sex     int8
+	Id   int32
+	Name string
 }
 
 func main() {
