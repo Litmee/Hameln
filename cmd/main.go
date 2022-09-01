@@ -7,10 +7,9 @@ import (
 )
 
 type User struct {
-	Id       int32
-	Name     string
-	Address  string
-	LastName string
+	Id      int32
+	Name    string
+	Address string
 }
 
 func main() {
@@ -19,24 +18,9 @@ func main() {
 	var user User
 	fmt.Printf("内存大小: %v \n", unsafe.Sizeof(user))
 
-	fmt.Println("-----------------------------------")
+	fmt.Println("-----------------------------------------------")
 
-	user.Id = 100
+	var myNorth internal.MyNorth
 
-	var btRoot = new(internal.BinaryTree)
-	var btLeft = new(internal.BinaryTree)
-	btLeft.SetValue(user)
-	btRoot.SetLeft(btLeft)
-
-	value := (btRoot.GetLeft().GetValue()).(User)
-	fmt.Println(value.Id)
-
-	fmt.Println(user.Id)
-	fmt.Println("-----------------------------------")
-	updateId(&user)
-	fmt.Println(user.Id)
-}
-
-func updateId(user *User) {
-	user.Id = 200
+	internal.DoNorth(&myNorth, "Good")
 }
