@@ -10,7 +10,6 @@ type User struct {
 	Id      int32
 	Name    string
 	Address string
-	Sex     int8
 }
 
 func main() {

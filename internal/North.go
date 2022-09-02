@@ -14,7 +14,7 @@ func DoNorth(gn GoNorth, s string) {
 	if err != nil {
 		log.Println(err)
 	}
-	fmt.Printf("res: %v", n)
+	fmt.Printf("result: %v", n)
 }
 
 type MyNorth struct{}
