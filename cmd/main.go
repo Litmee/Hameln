@@ -10,6 +10,7 @@ type User struct {
 	Id      int32
 	Name    string
 	Address string
+	Color   string
 }
 
 func main() {
