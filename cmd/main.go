@@ -8,7 +8,6 @@ import (
 type User struct {
 	Id   int32
 	Name string
-	Age  int8
 }
 
 func main() {
