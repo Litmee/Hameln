@@ -6,7 +6,6 @@ import (
 )
 
 type User struct {
-	Sex  int8
 	Id   int32
 	Name string
 }
