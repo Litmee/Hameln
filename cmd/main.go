@@ -7,6 +7,7 @@ import (
 
 type User struct {
 	Id      uint64
+	Sex     int8
 	Name    string
 	Address string
 }
