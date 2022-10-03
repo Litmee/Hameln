@@ -6,7 +6,7 @@ import (
 )
 
 type User struct {
-	Id   uint8
+	Id   uint64
 	Name string
 }
 
