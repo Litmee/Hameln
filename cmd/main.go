@@ -10,7 +10,12 @@ type User struct {
 	Name string
 }
 
+func doing() string {
+	return "hello world"
+}
+
 func main() {
+	println(doing())
 	align := unsafe.Alignof(User{})
 	fmt.Printf("最大内存对齐边界: %v \n", align)
 	var user User
